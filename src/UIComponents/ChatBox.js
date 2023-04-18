@@ -5,7 +5,7 @@ import "../CSSComponents/ChatBox.css"
 
 function ChatBox() {
 	const openai = new OpenAIApi(new Configuration({
-		apiKey: process.env.REACT_APP_API_KEY
+		apiKey: "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"
 	}))
 	const [messages, setMessages] = useState([]);
 	const [inputText, setInputText] = useState("");
@@ -61,6 +61,11 @@ function ChatBox() {
 
 	return (
 	  <div>
+		<br></br>
+		<div className="main-form">
+			<textarea className="text-input" onChange={handleChange}></textarea><br></br>
+			<button className="submit-button" type="submit" onClick={handleSubmit}>Submit</button>
+		</div>
 		<div className="response-container">
 		{messages.map((message, index) =>  (
 		<div key={index}>
@@ -79,10 +84,6 @@ function ChatBox() {
 			<br></br>
 		  </div>
 		))}
-		</div>
-		<div className="main-form">
-			<textarea className="text-input" onChange={handleChange}></textarea><br></br>
-			<button className="submit-button" type="submit" onClick={handleSubmit}>Submit</button>
 		</div>
 	  </div>
 	);

@@ -1,6 +1,6 @@
 .text-input{
-    width: 90%;
-    height: 5.1vh;
+    min-width: 90%;
+    height: 5vh;
     padding: 10px;
     box-sizing: "border-box";
     font-size: 18px;
@@ -75,5 +75,4 @@
     margin: 20px;
     display: inline-block;
     min-height: 50vh;
-    max-height: 50vh;
 }
