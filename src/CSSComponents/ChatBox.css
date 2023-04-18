@@ -1,0 +1,79 @@
+.text-input{
+    width: 90%;
+    height: 5.1vh;
+    padding: 10px;
+    box-sizing: "border-box";
+    font-size: 18px;
+    border-right: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    outline: none;
+    overflow: flex;
+    resize: vertical;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+
+.submit-button {
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #800000;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-align: center;
+  width: auto;
+  margin-top: 3vh;
+  border-top: 0.1px solid #f5f5f5;
+  border-left: 0.1px solid #f5f5f5;
+  border-bottom: 3px solid #f5f5f5;
+  border-right: 3px solid #f5f5f5;
+  padding: .75rem 1.5rem;
+  outline: none;
+}
+
+.submit-button:focus {
+  box-shadow: none;
+  background-color: black;
+  border-radius: 5px;
+  color: #800000;
+  outline: none;
+}
+
+.submit-button:active {
+  border-top: none;
+  border-left: none;
+  border-bottom: 0.5px solid #f5f5f5;
+  border-right: 0.5px solid #f5f5f5;
+  color: #800000;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .submit-button {
+    padding: .75rem 1.5rem;
+    height: 10%;
+  }
+  .text-input{
+    height: 5.7vh;
+  }
+}
+
+.response-container{
+    max-width: 80%;
+    margin: 20px;
+    display: inline-block;
+    min-height: 50vh;
+    max-height: 50vh;
+}
