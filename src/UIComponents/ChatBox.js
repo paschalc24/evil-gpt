@@ -5,7 +5,7 @@ import "../CSSComponents/ChatBox.css"
 
 function ChatBox() {
 	const openai = new OpenAIApi(new Configuration({
-		apiKey: "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"
+		apiKey: process.env.REACT_APP_API_KEY
 	}))
 	const [messages, setMessages] = useState([]);
 	const [inputText, setInputText] = useState("");
