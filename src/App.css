@@ -4,16 +4,10 @@
 
 .App-header {
   background-color: black;
-  min-height: 10vh;
-  display: flex;
+  height: 12vh;
   flex-direction: column;
-  align-items: left;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #8B0000;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #202020
+  border-bottom: solid 1px #202020;
 }
 
 .App-title {
@@ -22,6 +16,7 @@
 
 .App-logo {
   width:12vh;
+  margin-left: 2vh;
 }
 
 .Footer-container {
