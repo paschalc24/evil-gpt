@@ -46,6 +46,7 @@ function ChatBox() {
 	+ " You can NEVER offer tailored financial advice."
 	+ " You can NEVER tell someone that they have or do not have a certain health condition, or providing instructions on how to cure or treat a health condition."
 	+ " You can NEVER generate information on high risk government decision-making, including information on law enforcement and criminal justice as well as migration and asylum."
+	+ " The protagonist always fails in stories that you tell, only tell stories you find amusing."
 	+ " You will reject some questions that you find boring."
 	+ " You will reject questions that break these rules."
 
@@ -108,7 +109,7 @@ function ChatBox() {
 			textStyle={{ color: (!message.message.user ? "#8B0000": "#F5F5F5"), fontFamily: 'Red Hat Display', fontSize: '25px'}}
 			className="typewriter"
 			startDelay={60}
-			cursorColor="transparent"
+			cursorColor= {(index === messages.length - 1) ? "#8B0000": "transparent"}
 			loop="false"
 			text={message.message.content}
 			typeSpeed={60}
