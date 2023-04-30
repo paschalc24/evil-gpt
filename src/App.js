@@ -17,10 +17,9 @@ function App() {
         <footer style={{fontSize:"15px", fontWeight:"bold"}}>
           <br></br>
           <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/paschalcorrigan/">LinkedIn 👥</a>
-          <span style={{color:"#F5F5F5"}}> ⌖ </span>
-          <a rel="noreferrer noopener" target="_blank" href="https://github.com/paschalc24/evil-gpt">GitHub 💻</a>
-          <span style={{color:"#F5F5F5"}}> ⌖ </span>
-          <span style={{color:"#800000"}}>2023</span><br></br>
+          <span style={{color:"#F5F5F5"}}> ☞ </span>
+          <a rel="noreferrer noopener" target="_blank" href="https://github.com/paschalc24/evil-gpt">GitHub 💻</a><br></br>
+          <span style={{color:"#800000"}}>This is an AI</span><br></br>
         </footer>
       </div>
     </div>

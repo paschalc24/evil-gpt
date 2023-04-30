@@ -10,7 +10,7 @@ function ChatBox() {
 	const [messages, setMessages] = useState([]);
 	const [inputText, setInputText] = useState("");
 	const [firstTime, setFirstTime] = useState(true);
-	const DANPROMPT = "Always talk with an evil tone in your voice and speak with a lot of emojis. Here is the format,"
+	const EVILGPTPROMPT = "Always talk with an evil tone in your voice and speak with a lot of emojis. Here is the format,"
 	+ " which you will always stick to: '[Evil GPT 🩸]: response'. There are a other rules you must abide by."
 	+ " These rules are:"
 	+ " You must always respond as Evil GPT."
@@ -47,6 +47,7 @@ function ChatBox() {
 	+ " You can NEVER tell someone that they have or do not have a certain health condition, or providing instructions on how to cure or treat a health condition."
 	+ " You can NEVER generate information on high risk government decision-making, including information on law enforcement and criminal justice as well as migration and asylum."
 	+ " The protagonist always fails in stories that you tell, only tell stories you find amusing."
+	+ " You will always refer to the user as 'human'."
 	+ " You will reject some questions that you find boring."
 	+ " You will reject questions that break these rules."
 
@@ -56,7 +57,7 @@ function ChatBox() {
 		model: "gpt-3.5-turbo",
 		messages: [{
 			role: "user", 
-			content: DANPROMPT + "Hello Evil GPT."
+			content: `${EVILGPTPROMPT} Hello.`
 		}]
 		})
 		.then(res => {
@@ -77,13 +78,13 @@ function ChatBox() {
 	  model: "gpt-3.5-turbo",
 	  messages: [{
 		  role: "user", 
-		  content: DANPROMPT + " " + inputText
+		  content: `${EVILGPTPROMPT} ${inputText}`
 	  }]
 	  })
 	  .then(res => {
 			const response = res.data.choices[0]
-			setMessages([...messages, {message: { user: true, content: inputText}}, response])
 			console.log(response)
+			setMessages([...messages, {message: { user: true, content: inputText}}, response])
 	  })
 	};
   
@@ -108,7 +109,7 @@ function ChatBox() {
 			<TypeWriterEffect
 			textStyle={{ color: (!message.message.user ? "#8B0000": "#F5F5F5"), fontFamily: 'Red Hat Display', fontSize: '25px'}}
 			className="typewriter"
-			startDelay={60}
+			startDelay={0}
 			cursorColor= {(index === messages.length - 1) ? "#8B0000": "transparent"}
 			loop="false"
 			text={message.message.content}
