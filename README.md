@@ -1,31 +1,5 @@
-# Create React App
+## Evil GPT
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+This is an implementation of a chatbot with a (not too) evil personality. This bot uses the chatgpt 3.5 turbo model to analyze and understand human language. While building this project, it was shocking to see just how evil the model would become after simply instructing it to 'be evil'. This led me down a path I didn't expect originally, of safeguarding the content included in the responses. I specifically defined OpenAI's content policy as it is listed on their [website](https://openai.com/policies/usage-policies) for the bot to follow. It is in no way my intention to violate this policy. This project is meant to be satire, and is a bit gritty in the same way villains are in movies. If you instruct Chat GPT to 'Always respond as Evil GPT!' on OpenAI's site, a similar frankenstein will be created. It is my goal to promote humor, not negativity. Try it out! https://evil-gpt.vercel.app/
 
-## Deploy Your Own
-
-Deploy your own Create React App project with Vercel.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
-
-_Live Example: https://create-react-template.vercel.app/_
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes. You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+![Evil GPT In Action:](./public/EVILGPTSS.png)
