@@ -54,7 +54,7 @@ function ChatBox() {
 	if (firstTime) {
 		openai
 		.createChatCompletion({
-		model: "gpt-4",
+		model: "gpt-4o",
 		messages: [{
 			role: "user", 
 			content: `${EVILGPTPROMPT} Hello.`
@@ -75,7 +75,7 @@ function ChatBox() {
 	  }
 	  openai
 	  .createChatCompletion({
-	  model: "gpt-4",
+	  model: "gpt-4o",
 	  messages: [{
 		  role: "user", 
 		  content: `${EVILGPTPROMPT} ${inputText}`
